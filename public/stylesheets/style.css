@@ -1,0 +1,38 @@
+body {
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+}
+h1, h2, h3, h4 { 
+    color: #0000BB;
+}
+h1 {
+	font-size: 150%;
+}
+.subtitle { 
+    font-size: 125%;
+    font-weight: bold;
+    font-style: italic;
+    color: #0000BB;
+}
+.styledtable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.styledtable td, .styledtable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.styledtable tr:nth-child(even){background-color: #f2f2f2;}
+
+.styledtable tr:hover {background-color: #ddd;}
+
+.styledtable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0000BB;
+    color: white;
+}
+

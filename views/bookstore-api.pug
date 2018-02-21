@@ -1,0 +1,22 @@
+include includes/head.pug
+
+mixin foo(httpVerb, uri, description)
+  tr
+    td #{httpVerb}
+    td #{uri}
+    td #{description}
+
+p Service Name: #{apihelp['description']} 
+
+p API Version: #{apihelp['version']}
+
+h3 Requests:
+
+table.styledtable
+  tr
+    th HTTP verb
+    th URI
+    th Description
+
+  each row in apihelp['requests'] 
+    +foo( row['http-verb'], row['uri'], row['description'] )
