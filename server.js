@@ -21,9 +21,11 @@ app.get('/process_get', function (req, res) {
    res.end(JSON.stringify(response));
 })
 
-var server = app.listen(8081, function () {
-   var host = server.address().address
-   var port = server.address().port
-   
-   console.log("Example app listening at http://%s:%s", host, port)
-})
+
+const PORT = process.env.PORT || 8081;
+ 
+var server = app.listen(PORT, () => {
+    var host = server.address().address
+    var port = server.address().port
+    console.log(`Server is listening on port ${PORT}`);
+});
